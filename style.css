@@ -5,32 +5,32 @@
 
 @font-face {
     font-family: Helvetica;
-    src: url("../fonts/HelveticaNeueBold.ttf");
+    src: url("./fonts/HelveticaNeueBold.ttf");
 }
 
 @font-face {
     font-family: Helvetica-Bold;
-    src: url("../fonts/HelveticaNeue.ttf");
+    src: url("./fonts/HelveticaNeue.ttf");
 }
 
 @font-face {
     font-family: Times-Italic;
-    src: url("../fonts/TimesItalic.ttf");
+    src: url("./fonts/TimesItalic.ttf");
 }
 
 @font-face {
     font-family: Tungsten-Medium;
-    src: url("../fonts/TungstenMedium.ttf");
+    src: url("./fonts/TungstenMedium.ttf");
 }
 
 @font-face {
     font-family: Tungsten;
-    src: url("../fonts/TungstenMedium.ttf");
+    src: url("./fonts/TungstenMedium.ttf");
 }
 
 @font-face {
     font-family: Tungsten-Light;
-    src: url("../fonts/TungstenLight.otf");
+    src: url("./fonts/TungstenLight.otf");
 }
 
 html,
