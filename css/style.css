@@ -48,7 +48,7 @@ body {
 .main {
     margin-left: 210px;
     margin-right: 210px;
-    
+    max-width: 1180px;
 }
 
 .header-main {
