@@ -355,7 +355,7 @@ body {
 }
 
 .banner {
-    background-image: url("/img/news.png");
+    background-image: url("./img/news.png");
     min-height: 615px;
     position: relative;
 }
