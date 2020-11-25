@@ -265,15 +265,28 @@ body {
     padding-top: 23px;
 
 }
-
+.content-item .info {
+    display: flex;
+justify-content: space-between;
+}
 .content-item h3 {
     font-family: Tungsten;
     color: #1ac7c3;
     font-weight: lighter;
-    font-size: 22px;
+    font-size: 25px;
     margin-bottom: 0px;
 }
 
+.content-item a{
+    font-family: Times-Italic;
+    font-style: italic;
+    opacity: 0.8;
+    color: #1ac7c3;
+    font-weight: lighter;
+    font-size: 18px;
+    margin-bottom: 0px;
+    text-decoration: none;
+}
 .content-item span {
     font-family: 'Times New Roman';
     color: #798184;
@@ -316,7 +329,9 @@ body {
 
 .content-item img {
     margin-left: 0px;
-    height: auto;
+    height: 255px;
+    width: 700px;
+    object-fit: cover;
 }
 
 .editor_pick {}
