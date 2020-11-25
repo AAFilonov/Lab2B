@@ -6,13 +6,19 @@
     <title>Company</title>
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="style" rel="stylesheet"  type="text/css" href="./style.css">
 
-    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <div class="header">
-        <div class="main header-main">
+  
+    <div class="header ">
+        <div class="style_swtich">
+            <button  onclick='setStyle("./style.css")'><a href="#">Default vesion</a></button>
+            <button  onclick='setStyle("./print.css")'><a href="#">Print vesion</a></button>
+        </div>
+        <div class="main header-main hidden_print">
+            
             <div class="container  header_logo">
                 <div class="header_item">konstructs</div>
             </div>
@@ -26,6 +32,10 @@
                 <div class="header_item header_menu_item"><a href="#">tutorials</a></div>
             </div>
             <div class="container header_nav">
+
+            
+
+                
                 <div class="header_item header_nav_item"><a href="#">Advertise</a></div>
                 <div class="header_item header_nav_item"><a href="#">About Us</a></div>
                 <div class="header_item header_nav_item active"><a href="#">Contact Us</a></div>
@@ -34,7 +44,7 @@
     </div>
 
     <div class="main">
-        <div class="navigation">
+        <div class="navigation hidden_print">
             <div class="menu">
                 <div class="menu_item active"><a href="#">Article Types</a></div>
                 <div class="menu_item"><a href="#">3D Printing</a></div>
@@ -92,7 +102,7 @@
 
 
             </div>
-            <div class="right-side">
+            <div class="right-side hidden_print">
                 <div class="popular">
                     <div class="side-title">
                         <h2>Popular</h2>
@@ -123,7 +133,7 @@
                         <div class="polosochka">____________</div>
                     </div>
                 </div>
-                <div class="editor_pick">
+                <div class="editor_pick ">
                     <div class="content-item pick-title-box">
                         <div class="side-title pick_title">
                             <h2>Editors pick</h2>
@@ -165,7 +175,7 @@
             </div>
 
         </div>
-        <div class="banner">
+        <div class="banner hidden_print">
             <div class="side-title">
                 <h2>Popular</h2>
             </div>
@@ -199,7 +209,7 @@
                     </div>
                 </div>
             </div>
-            <div class="right-side">
+            <div class="right-side hidden_print">
                 <div class="popular">
                     <div class="side-title">
                         <h2>Popular</h2>
@@ -223,16 +233,14 @@
                         <div class="polosochka">____________</div>
 
                     </div>
-                    <div class="content-item">
-
-                    </div>
+                
                 </div>
 
             </div>
 
         </div>
 
-        <footer class="footer ">
+        <footer class="footer hidden_print">
 
             <div class="footer-item">
 
@@ -288,6 +296,7 @@
         </footer>
 
     </div>
+    <script src="scripts/main.js"></script>
 </body>
 
 </html>

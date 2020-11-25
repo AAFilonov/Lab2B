@@ -1,0 +1,11 @@
+
+html,
+body {
+   color: black;
+   background-image: none;
+   background: #FFF;
+   font-family: "Times New Roman", Georgia, Serif;
+}
+.hidden_print, .polosochka, .pick-info p{
+    display: none;
+}

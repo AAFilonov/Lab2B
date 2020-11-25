@@ -33,6 +33,25 @@
     src: url("./fonts/TungstenLight.otf");
 }
 
+@media print { /* print styles go here */
+    
+    html,
+    body 
+    {
+   color: black;
+   background-image: none;
+   background: #FFF;
+   font-family: "Times New Roman", Georgia, Serif;
+    }
+    h1{
+        font-size: 15;
+    }
+    .hidden_print, .polosochka, .pick-info p,.style_swtich
+    {
+    display: none;
+    }
+}
+
 html,
 body {
     margin: 0px;
@@ -363,6 +382,7 @@ body {
 .banner .side-title {
     top: 67px;
     left: 60px;
+    z-index: 0;
 }
 
 .banner h1 {
@@ -414,3 +434,13 @@ body {
     left: 12px;
     background-color: #1ac7c3;
 }
+.style_swtich button{
+    border: none;
+  color: white;
+  background-color: transparent;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  
+}
+
