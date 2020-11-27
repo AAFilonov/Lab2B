@@ -46,6 +46,12 @@
     h1{
         font-size: 15;
     }
+    .content-item img {
+        margin-left: 0px;
+        height: 255px;
+        width: 700px;
+        object-fit: cover;
+    }
     .hidden_print, .polosochka, .pick-info p,.style_swtich
     {
     display: none;
@@ -458,4 +464,16 @@ justify-content: space-between;
   display: inline-block;
   
 }
+#filters label, #filters span{    
+    color: #737c85;
+    font-size: 15px;
+    font-family: Helvetica-Bold;
+}
 
+.hide{
+    display: none;
+}
+.block{
+    display: flex;
+    flex-direction: column;
+}

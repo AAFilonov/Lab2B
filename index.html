@@ -6,24 +6,25 @@
     <title>Company</title>
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link id="style" rel="stylesheet"  type="text/css" href="./style.css">
-
+    <link id="style" rel="stylesheet" type="text/css" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> 
+    <script src="scripts/filters.js"></script>
 </head>
 
 <body>
-  
+
     <div class="header ">
         <div class="style_swtich">
-            <button  onclick='setStyle("./style.css")'><a href="#">Default vesion</a></button>
-            <button  onclick='setStyle("./print.css")'><a href="#">Print vesion</a></button>
+            <button onclick='setStyle("./style.css")'><a href="#">Default vesion</a></button>
+            <button onclick='setStyle("./print.css")'><a href="#">Print vesion</a></button>
         </div>
         <div class="main header-main hidden_print">
-            
+
             <div class="container  header_logo">
                 <div class="header_item">konstructs</div>
             </div>
             <div class="container header_section">
-                
+
                 <div class="header_item header_menu_item" style="position: relative;">
                     <a href="#">Articles</a>
                     <div class="header_active"></div>
@@ -33,9 +34,9 @@
             </div>
             <div class="container header_nav">
 
-            
 
-                
+
+
                 <div class="header_item header_nav_item"><a href="#">Advertise</a></div>
                 <div class="header_item header_nav_item"><a href="#">About Us</a></div>
                 <div class="header_item header_nav_item active"><a href="#">Contact Us</a></div>
@@ -187,201 +188,216 @@
                     <h2>In recent news</h2>
                 </div>
                 <div class="recent-news">
-                    <div class="content-item">
+                    <div class="content-item" data-content_type='Note' data-topic='Printers' data-month='november'>
                         <div class="info">
                             <h3>Note-Printers</h3>
                             <h3>25.11.2020</h3>
                         </div>
-                        
+
                         <h1>DeltaMaker – The new kid on the block An Elegant 3D Printer and a new wicked ass thing</h1>
-                       
+
                         <div class="content-img">
                             <img src="img/printer_1.jpg" alt="">
                         </div>
 
 
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eaque, sed laborum, assumenda asperiores voluptatum deserunt rerum molestias temporibus dignissimos, obcaecati reprehenderit! Aperiam, eius. Eius mollitia quasi voluptatibus magnam. Quibusdam.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eaque, sed laborum, assumenda
+                            asperiores voluptatum deserunt rerum molestias temporibus dignissimos, obcaecati
+                            reprehenderit! Aperiam, eius. Eius mollitia quasi voluptatibus magnam. Quibusdam.
                         </p>
-                       
+
                     </div>
-                    <div class="content-item">
+                    <div class="content-item" data-content_type='Article' data-topic='Software' data-month='november'>
+
                         <div class="info">
                             <h3>Article-Software</h3>
                             <h3>24.10.2020</h3>
                         </div>
-                        
+
                         <h1>DeltaMaker – The new kid on the block An Elegant 3D Printer and a new wicked ass thing</h1>
-                       
+
                         <div class="content-img">
                             <img src="img/software.jpg" alt="">
                         </div>
 
 
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eaque, sed laborum, assumenda asperiores voluptatum deserunt rerum molestias temporibus dignissimos, obcaecati reprehenderit! Aperiam, eius. Eius mollitia quasi voluptatibus magnam. Quibusdam.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eaque, sed laborum, assumenda
+                            asperiores voluptatum deserunt rerum molestias temporibus dignissimos, obcaecati
+                            reprehenderit! Aperiam, eius. Eius mollitia quasi voluptatibus magnam. Quibusdam.
                         </p>
                         <a href="">See full article...</a>
-                    </div> 
-                    <div class="content-item">
+                    </div>
+                    <div class="content-item" data-content_type='Article' data-topic='3D-Printing'
+                        data-month='november'>
                         <div class="info">
                             <h3>Aticle-3D-Printing</h3>
                             <h3>25.11.2020</h3>
                         </div>
-                        
+
                         <h1>DeltaMaker – The new kid on the block An Elegant 3D Printer and a new wicked ass thing</h1>
-                       
+
                         <div class="content-img">
                             <img src="img/3d.jpg" alt="">
                         </div>
 
 
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eaque, sed laborum, assumenda asperiores voluptatum deserunt rerum molestias temporibus dignissimos, obcaecati reprehenderit! Aperiam, eius. Eius mollitia quasi voluptatibus magnam. Quibusdam.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eaque, sed laborum, assumenda
+                            asperiores voluptatum deserunt rerum molestias temporibus dignissimos, obcaecati
+                            reprehenderit! Aperiam, eius. Eius mollitia quasi voluptatibus magnam. Quibusdam.
                         </p>
                         <a href="">See full article...</a>
-                    </div> 
-                    <div class="content-item">
+                    </div>
+                    <div class="content-item" data-content_type='Note' data-topic='Printers' data-month='October'>
                         <div class="info">
                             <h3>Note-Printers</h3>
                             <h3>25.11.2020</h3>
                         </div>
-                        
+
                         <h1>DeltaMaker – The new kid on the block An Elegant 3D Printer and a new wicked ass thing</h1>
-                       
+
                         <div class="content-img">
                             <img src="img/printer_1.jpg" alt="">
                         </div>
 
 
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eaque, sed laborum, assumenda asperiores voluptatum deserunt rerum molestias temporibus dignissimos, obcaecati reprehenderit! Aperiam, eius. Eius mollitia quasi voluptatibus magnam. Quibusdam.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eaque, sed laborum, assumenda
+                            asperiores voluptatum deserunt rerum molestias temporibus dignissimos, obcaecati
+                            reprehenderit! Aperiam, eius. Eius mollitia quasi voluptatibus magnam. Quibusdam.
                         </p>
-                       
+
                     </div>
-                    <div class="content-item">
+                    <div class="content-item" data-content_type='Article' data-topic='Software' data-month='October'>
                         <div class="info">
                             <h3>Article-Software</h3>
                             <h3>24.10.2020</h3>
                         </div>
-                        
+
                         <h1>DeltaMaker – The new kid on the block An Elegant 3D Printer and a new wicked ass thing</h1>
-                       
+
                         <div class="content-img">
                             <img src="img/software.jpg" alt="">
                         </div>
 
 
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eaque, sed laborum, assumenda asperiores voluptatum deserunt rerum molestias temporibus dignissimos, obcaecati reprehenderit! Aperiam, eius. Eius mollitia quasi voluptatibus magnam. Quibusdam.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eaque, sed laborum, assumenda
+                            asperiores voluptatum deserunt rerum molestias temporibus dignissimos, obcaecati
+                            reprehenderit! Aperiam, eius. Eius mollitia quasi voluptatibus magnam. Quibusdam.
                         </p>
                         <a href="">See full article...</a>
-                    </div> 
-                    <div class="content-item">
+                    </div>
+                    <div class="content-item" data-content_type='Article' data-topic='3D-Printing' data-month='October'>
                         <div class="info">
                             <h3>Aticle-3D-Printing</h3>
-                            <h3>25.11.2020</h3>
+                            <h3>5.10.2020</h3>
                         </div>
-                        
+
                         <h1>DeltaMaker – The new kid on the block An Elegant 3D Printer and a new wicked ass thing</h1>
-                       
+
                         <div class="content-img">
                             <img src="img/3d.jpg" alt="">
                         </div>
 
 
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eaque, sed laborum, assumenda asperiores voluptatum deserunt rerum molestias temporibus dignissimos, obcaecati reprehenderit! Aperiam, eius. Eius mollitia quasi voluptatibus magnam. Quibusdam.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eaque, sed laborum, assumenda
+                            asperiores voluptatum deserunt rerum molestias temporibus dignissimos, obcaecati
+                            reprehenderit! Aperiam, eius. Eius mollitia quasi voluptatibus magnam. Quibusdam.
                         </p>
                         <a href="">See full article...</a>
-                    </div> 
+                    </div>
                     <div class="content-item" data-content_type='Note' data-topic='3D-Printing' data-month='September'>
                         <div class="info">
-                            <h3>Note-Printers</h3>
-                            <h3>25.11.2020</h3>
+                            <h3>Note 3D-Printing</h3>
+                            <h3>25.09.2020</h3>
                         </div>
-                        
+
                         <h1>DeltaMaker – The new kid on the block An Elegant 3D Printer and a new wicked ass thing</h1>
-                       
-                        <div class="content-img">
-                            <img src="img/printer_1.jpg" alt="">
-                        </div>
 
-
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eaque, sed laborum, assumenda asperiores voluptatum deserunt rerum molestias temporibus dignissimos, obcaecati reprehenderit! Aperiam, eius. Eius mollitia quasi voluptatibus magnam. Quibusdam.
-                        </p>
-                       
-                    </div>
-                    <div class="content-item">
-                        <div class="info">
-                            <h3>Article-Software</h3>
-                            <h3>24.10.2020</h3>
-                        </div>
-                        
-                        <h1>DeltaMaker – The new kid on the block An Elegant 3D Printer and a new wicked ass thing</h1>
-                       
-                        <div class="content-img">
-                            <img src="img/software.jpg" alt="">
-                        </div>
-
-
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eaque, sed laborum, assumenda asperiores voluptatum deserunt rerum molestias temporibus dignissimos, obcaecati reprehenderit! Aperiam, eius. Eius mollitia quasi voluptatibus magnam. Quibusdam.
-                        </p>
-                        <a href="">See full article...</a>
-                    </div> 
-                    <div class="content-item note 3d-printing september">
-                        <div class="info">
-                            <h3>Aticle-3D-Printing</h3>
-                            <h3>25.11.2020</h3>
-                        </div>
-                        
-                        <h1>DeltaMaker – The new kid on the block An Elegant 3D Printer and a new wicked ass thing</h1>
-                       
                         <div class="content-img">
                             <img src="img/3d.jpg" alt="">
                         </div>
 
 
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eaque, sed laborum, assumenda asperiores voluptatum deserunt rerum molestias temporibus dignissimos, obcaecati reprehenderit! Aperiam, eius. Eius mollitia quasi voluptatibus magnam. Quibusdam.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eaque, sed laborum, assumenda
+                            asperiores voluptatum deserunt rerum molestias temporibus dignissimos, obcaecati
+                            reprehenderit! Aperiam, eius. Eius mollitia quasi voluptatibus magnam. Quibusdam.
+                        </p>
+
+                    </div>
+                    <div class="content-item" data-content_type='Article' data-topic='Software' data-month='September'>
+                        <div class="info">
+                            <h3>Article-Software</h3>
+                            <h3>12.09.2020</h3>
+                        </div>
+
+                        <h1>DeltaMaker – The new kid on the block An Elegant 3D Printer and a new wicked ass thing</h1>
+
+                        <div class="content-img">
+                            <img src="img/software.jpg" alt="">
+                        </div>
+
+
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eaque, sed laborum, assumenda
+                            asperiores voluptatum deserunt rerum molestias temporibus dignissimos, obcaecati
+                            reprehenderit! Aperiam, eius. Eius mollitia quasi voluptatibus magnam. Quibusdam.
                         </p>
                         <a href="">See full article...</a>
-                    </div> 
-              
-                   
+                    </div>
+                    <div class="content-item" data-content_type='Note' data-topic='3D-Printing' data-month='September'>
+                        <div class="info">
+                            <h3>Note-3D-Printing</h3>
+                            <h3>1.09.2020</h3>
+                        </div>
+
+                        <h1>DeltaMaker – The new kid on the block An Elegant 3D Printer and a new wicked ass thing</h1>
+
+                        <div class="content-img">
+                            <img src="img/3d.jpg" alt="">
+                        </div>
+
+
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eaque, sed laborum, assumenda
+                            asperiores voluptatum deserunt rerum molestias temporibus dignissimos, obcaecati
+                            reprehenderit! Aperiam, eius. Eius mollitia quasi voluptatibus magnam. Quibusdam.
+                        </p>
+                        <a href="">See full article...</a>
+                    </div>
+
+
                 </div>
             </div>
             <div class="right-side hidden_print">
-                <div class="popular">
-                    <div class="side-title">
-                        <h2>Popular</h2>
-                    </div>
-                    <div class="content-item">
-                        <h1>DeltaMaker – The new kid on the block An Elegant 3D Printer</h1>
-                        <span>A new cheap ass 3D Printer worth checking out</span>
-                        <p>2 Days Ago</p>
-                        <div class="polosochka">____________</div>
-                    </div>
-                    <div class="content-item">
-                        <h1>Software Review: Autodesk Inventor Fusion for Mac</h1>
-                        <span>3D Printing, 3D Software</span>
-                        <p>3 Days Ago</p>
-                        <div class="polosochka">____________</div>
-                    </div>
-                    <div class="content-item">
-                        <h1>DeltaMaker – The new kid on the block An Elegant 3D Printer</h1>
-                        <span>A new cheap ass 3D Printer worth checking out</span>
-                        <p>2 Days Ago</p>
-                        <div class="polosochka">____________</div>
+                <button onclick="update_list()">Update list</button>
+                <div id="filters">
+                    <div class="block">
+                        <span>Month:</span>
+                        <label><input type="checkbox" name="month" value="November" checked> November</label>
+                        <label><input type="checkbox" name="month" value="October" checked>October</label>
+                        <label><input type="checkbox" name="month" value="September"  checked>September</label>
 
                     </div>
-                
+                    <div class="block">
+                        <span>Type of Content:</span>
+                        <label><input type="checkbox" name="content_type" value="Article"  checked>Article</label>
+                        <label><input type="checkbox" name="content_type" value="Note"  checked>Note</label>
+                    </div>
+                    <div class="block"><span>Topic:</span>
+                        <label><input type="checkbox" name="topic" value="Printers" checked>Printers</label>
+                        <label><input type="checkbox" name="topic" value="3D-printing" checked>3d-Printing</label>
+                        <label><input type="checkbox" name="topic" value="Software"  checked>Software</label>
+                    </div>
+                   
+                    
                 </div>
-
             </div>
-
         </div>
 
         <footer class="footer hidden_print">
@@ -441,6 +457,7 @@
 
     </div>
     <script src="scripts/main.js"></script>
+
 </body>
 
 </html>

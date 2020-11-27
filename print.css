@@ -9,3 +9,9 @@ body {
 .hidden_print, .polosochka, .pick-info p{
     display: none;
 }
+.content-item img {
+    margin-left: 0px;
+    height: 255px;
+    width: 700px;
+    object-fit: cover;
+}
