@@ -1,9 +1,7 @@
 const filter_content = document.querySelectorAll('.content-2  .content-item')
 
 
-function update_list(){
-    console.log('лист обновлен');
-}
+
 
 function filterChangeHande(event) {
 
