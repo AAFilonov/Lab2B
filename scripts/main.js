@@ -1,6 +1,6 @@
 var cssStyle = document.getElementById('style');
 
-window.onload = function () {
+window.onload = function() {
     if (localStorage && localStorage.getItem("style"))
         cssStyle.href = localStorage.getItem("style");
 };
@@ -19,9 +19,11 @@ for (var i = 0; i < inputs.length; i++) {
 
 
 
-$(document).ready(function () {
-    $('#filters input').change(function () { // событие на изменение чекбокса
-        $('article').each(function (index, elem) { // перебрать все элементы
+$(document).ready(function() {
+
+    $('#filters input').change(function() {
+        // событие на изменение чекбокса
+        $('article').each(function(index, elem) { // перебрать все элементы
             $(elem).show(); // включаем отображение элемента
             let data = $(elem).data(); // получаем все data-атрибуты элемента
             for (let prop in data) { // перебрать все характеристики элемента
@@ -31,5 +33,24 @@ $(document).ready(function () {
                 }
             }
         });
+
     });
+
+
+});
+
+$(function() {
+    $('#filters input').change(function(event) {
+        if (event.target.value == "September" || event.target.value == "Article") {
+            ($("#ch_content_type_article").prop('checked') || $("#ch_month_sep").prop('checked')) ? $("#ch_topic_printers").prop('disabled', true) = "": $("#ch_topic_printers").prop('disabled', false);
+
+        }
+
+        if (event.target.value == "Note") {
+            event.target.checked ? $("#ch_topic_software").prop('disabled', true) = "" : $("#ch_topic_software").prop('disabled', false);
+
+        }
+
+    });
+
 });

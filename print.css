@@ -1,17 +1,46 @@
-
 html,
 body {
-   color: black;
-   background-image: none;
-   background: #FFF;
-   font-family: "Times New Roman", Georgia, Serif;
+    color: black;
+    background-image: none;
+    background: #FFF;
+    font-family: "Times New Roman", Georgia, Serif;
 }
-.hidden_print, .polosochka, .pick-info p{
+
+.hidden_print,
+.polosochka,
+.pick-info p {
     display: none;
 }
+
 .content-item img {
     margin-left: 0px;
     height: 255px;
     width: 700px;
     object-fit: cover;
+}
+
+@media print {
+    /* print styles go here */
+    html,
+    body {
+        color: black;
+        background-image: none;
+        background: #FFF;
+        font-family: "Times New Roman", Georgia, Serif;
+    }
+    h1 {
+        font-size: 15;
+    }
+    .content-item img {
+        margin-left: 0px;
+        height: 255px;
+        width: 700px;
+        object-fit: cover;
+    }
+    .hidden_print,
+    .polosochka,
+    .pick-info p,
+    .style_swtich {
+        display: none;
+    }
 }
