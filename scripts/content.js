@@ -2,19 +2,22 @@ const content = [{
         month: "November",
         type: "Article",
         topic: "Software",
-        date: "25.11.20"
+        date: "25.11.20",
+        img: "software.jpg"
     },
     {
         month: "October",
         type: "Article",
         topic: "3D_Printing",
-        date: "12.10.20"
+        date: "12.10.20",
+        img: "3d.jpg"
     },
     {
         month: "September",
         type: "Note",
         topic: "Printers",
-        date: "2.09.20"
+        date: "2.09.20",
+        img: "printer_1.jpg"
     }
 ]
 
@@ -45,20 +48,7 @@ function printNews(arContent, selector) {
         tmpLine = tmpLine.replace('{{type}}', item.type);
         tmpLine = tmpLine.replace('{{topic}}', item.topic);
         tmpLine = tmpLine.replace('{{date}}', item.date);
-        switch (item.topic) {
-            case '3D_Printing':
-                tmpLine.replace('{{img}}', "3d.jpg");
-                break;
-            case 'Printers':
-                tmpLine.replace('{{img}}', "printer_1.jpg");
-                break;
-            case 'Software':
-                tmpLine.replace('{{img}}', "software.jpg");
-                break;
-            default:
-                tmpLine.replace('{{img}}', "news.jpg");
-                break;
-        }
+        tmpLine = tmpLine.replace('{{img}}', item.img);
         output += tmpLine;
     };
 
