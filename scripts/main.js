@@ -12,12 +12,9 @@ function setStyle(newStyle) {
         localStorage.setItem("style", newStyle);
 };
 
-var inputs = document.getElementsByTagName('input');
-for (var i = 0; i < inputs.length; i++) {
-    inputs[i].addEventListener('click', filterChangeHande, false);
-}
 
 
+/*
 
 $(document).ready(function() {
 
@@ -42,7 +39,8 @@ $(document).ready(function() {
 $(function() {
     $('#filters input').change(function(event) {
         if (event.target.value == "September" || event.target.value == "Article") {
-            ($("#ch_content_type_article").prop('checked') || $("#ch_month_sep").prop('checked')) ? $("#ch_topic_printers").prop('disabled', true) = "": $("#ch_topic_printers").prop('disabled', false);
+            ($("#ch_content_type_article").prop('checked') || $("#ch_month_sep").prop('checked')) ?
+            $("#ch_topic_printers").prop('disabled', true) = "": $("#ch_topic_printers").prop('disabled', false);
 
         }
 
@@ -54,3 +52,4 @@ $(function() {
     });
 
 });
+*/
