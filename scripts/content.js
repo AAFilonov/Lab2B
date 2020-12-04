@@ -6,6 +6,41 @@ const content = [{
         img: "software.jpg"
     },
     {
+        month: "November",
+        type: "Note",
+        topic: "Printers",
+        date: "4.11.20",
+        img: "printer_1.jpg"
+    },
+    {
+        month: "November",
+        type: "Note",
+        topic: "3D_Printing",
+        date: "1.11.20",
+        img: "3d.jpg"
+    },
+    {
+        month: "October",
+        type: "Note",
+        topic: "Printers",
+        date: "19.10.20",
+        img: "printer_1.jpg"
+    },
+    {
+        month: "October",
+        type: "Article",
+        topic: "3D_Printing",
+        date: "12.10.20",
+        img: "3d.jpg"
+    },
+    {
+        month: "October",
+        type: "Article",
+        topic: "Software",
+        date: "4.10.20",
+        img: "software.jpg"
+    },
+    {
         month: "October",
         type: "Article",
         topic: "3D_Printing",
@@ -16,8 +51,15 @@ const content = [{
         month: "September",
         type: "Note",
         topic: "Printers",
-        date: "2.09.20",
+        date: "3.09.20",
         img: "printer_1.jpg"
+    },
+    {
+        month: "September",
+        type: "Note",
+        topic: "Software",
+        date: "1.09.20",
+        img: "software.jpg"
     }
 ]
 
@@ -75,6 +117,7 @@ function printFilters(arContent, arProperties, selector) {
         vals.sort();
         vals.forEach(function(item, index, array) {
             tmpLine += lileTemplate.replace("{{prop}}", prop).replaceAll("{{name}}", item);
+            tmpLine = tmpLine.replace("{{prop}}", prop);
         });
 
         output += tmpLine;
@@ -115,12 +158,64 @@ function applyFilters(data, filter, properties) {
     return result;
 }
 
+
+
+function checkEmpty(data, filter, properties) {
+
+    let CheckboxList = $('#filters input:checkbox:not(:checked)').toArray();
+    for (let checkbox of CheckboxList) {
+        let tmpFilters = [];
+        tmpFilters = $.extend(true, [], filter);
+        tmpFilters[checkbox.name].push(checkbox.value);
+        let filtredContent = applyFilters(content, tmpFilters, properties);
+        if (filtredContent.length == 0) {
+            checkbox.disabled = true;
+        }
+    }
+
+}
+
+function checkSame(data, filter, properties) {
+
+    let CheckboxList = $('#filters input:checkbox:not(:checked)').toArray();
+    for (let checkbox of CheckboxList) {
+        let tmpFilters = [];
+        tmpFilters = $.extend(true, [], filter);
+        tmpFilters[checkbox.name].push(checkbox.value);
+        let NewContent = applyFilters(data, tmpFilters, properties);
+        let filtredContent = applyFilters(data, filter, properties);
+        let isSame = true;
+        if (filtredContent.length != NewContent.length) {
+            isSame = false;
+        } else {
+
+            let ComparisonResult = [];
+            for (let i = 0; i < filtredContent.length; i++) {
+                ComparisonResult.push(filtredContent[i] == NewContent[i]);
+            }
+            if (ComparisonResult.indexOf(false) != -1) {
+                isSame = false;
+            }
+        }
+        if (isSame) {
+            checkbox.disabled = true;
+        }
+    }
+
+
+}
+
+
 $(document).ready(function() {
     printNews(content, '#news_content');
-    printNews(content, properties, '#filters');
+    printFilters(content, properties, '#filters');
     $('#filters input').change(function() {
         let curFilter = readCurFilters('#filters input', properties);
+
         let filtredContent = applyFilters(content, curFilter, properties);
-        printFilms(filtredContent, '#news_content');
+        $('#filters input:checkbox').prop('disabled', false);
+        checkEmpty(content, curFilter, properties);
+        checkSame(content, curFilter, properties);
+        printNews(filtredContent, '#news_content');
     });
 });
